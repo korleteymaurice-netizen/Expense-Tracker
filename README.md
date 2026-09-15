@@ -2,6 +2,9 @@
 
 A full-stack personal expense tracker built with Node.js, Express, EJS, Bootstrap 5, vanilla JavaScript and PostgreSQL. It does not use an ORM.
 
+# Demo Link
+https://expense-tracker-gray-delta.vercel.app
+
 ## Features
 - User registration and login
 - Session-based authentication
