@@ -76,7 +76,8 @@ router.post('/register', async (req, res, next) => {
     ) {
       return res.status(400).render('register', {
         title: 'Create account',
-        error: 'Enter a valid name, email and password of at least 8 characters.'
+        error:
+          'Enter a valid name, email and password of at least 8 characters.'
       });
     }
 
@@ -116,7 +117,11 @@ router.post('/register', async (req, res, next) => {
 });
 
 router.post('/logout', (req, res) => {
-  req.session.destroy(() => {
+  req.session.destroy((err) => {
+    if (err) {
+      console.error('LOGOUT ERROR:', err);
+    }
+
     res.redirect('/login');
   });
 });
