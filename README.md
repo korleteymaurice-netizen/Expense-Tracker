@@ -38,6 +38,10 @@ npm run dev
 
 Open http://localhost:3000.
 
+<img src="images/dashboard.png" alt="Dashboard" width="800">
+
+<img src="images/login.png" alt="Dashboard" width="800">
+
 ## Database
 The application uses the `pg` package directly. There is no Prisma or other ORM.
 
